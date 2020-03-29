@@ -1,0 +1,15 @@
+.mobile {
+  background: $light-grey;
+
+  &__icons {
+    width: 70px;
+
+    img {
+      width: 12px;
+
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+  }
+}
