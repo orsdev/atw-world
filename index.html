@@ -16,17 +16,171 @@
 </head>
 
 <body>
+ <section class="mobile text-right p-3">
+  <div class="mobile__icons d-inline-block">
+   <img src="assets/img/icons/rectangle.png" alt="rectangle">
+   <img src="assets/img/icons/oval.png" alt="rectangle">
+   <img src="assets/img/icons/triangle.png" alt="rectangle">
+  </div>
+ </section>
+
+ <!-- HERO SECTION -->
+ <section class="hero">
+  <div class="hero__top w-100 py-2 px-4">
+   <i class=" fas fa-arrow-left text-light"></i>
+   <button type="button" class="btn btn-lg btn-outline-light font-weight-bold" data-toggle="modal"
+    data-target="#signup">
+    Join Group</button>
+  </div>
+  <div class=" hero__bottom px-4">
+   <h1 class="text-light font-weight-bold">Computer Engineering</h1>
+   <p class="text-light">142,765 Computer Engineers follow this</p>
+  </div>
+ </section>
+ <!-- SIGNUP MODAL -->
+ <div class="modal fade signup" id="signup" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+  aria-hidden="true">
+  <div class="modal-dialog text-right" role="document">
+   <button data-dismiss="modal" aria-label="Close" class="desktop-close">
+    <span class="desktop-close-item d-flex justify-content-center align-items-center text-dark">x</span>
+   </button>
+   <div class="alert text-center modal-message p-0">
+    <p class="alert-success p-4">
+     Let's learn, share & inspire each other with our passion for computer
+     engineering, Sign up now
+    </p>
+   </div>
+   <div class="d-flex align-items-center justify-content-center">
+    <div class="desktop-content modal-content py-3 rounded-0 py-5">
+     <div class="modal-header border-0 px-4 d-flex justify-content-between align-items-center">
+      <h3 class="modal-title font-weight-bold" id="my-modal-title">Create Account</h3>
+      <button data-dismiss="modal" aria-label="Close">
+       <span class="modal__close d-flex justify-content-center align-items-center text-light">x</span>
+      </button>
+     </div>
+     <div class="modal-body">
+      <form action="" method="POST" id="formsignup">
+       <div class="form-group modal-fullname m-0">
+        <input type="text" name="firstname" id="firstname" class="form-control form-control-lg"
+         placeholder="First Name">
+        <input type="text" name="lastname" id="user" class="form-control form-control-lg" placeholder="Last Name">
+       </div>
+       <div class="form-group m-0">
+        <input type="text" name="signup-email" id="signup-email" class="signup-email form-control form-control-lg"
+         placeholder="Email">
+       </div>
+       <div class="form-group m-0 modal-password d-flex align-items-center">
+        <input type="password" name="signup-password" id="signup-password"
+         class="signup-password form-control form-control-lg" autocomplete="on" placeholder="Password">
+        <i class="d-flex align-items-center justify-content-center fas fa-eye"></i>
+       </div>
+       <div class="form-group m-0">
+        <input type="password" name="confirm-password" id="confirm-password"
+         class="confirm-password form-control form-control-lg" autocomplete="on" placeholder="Confirm Password">
+       </div>
+       <div class="form-group mt-5 d-flex justify-content-between align-items-center">
+        <input type="submit" name="signup" value="Create Account" class="btn-primary btn-lg btn signupbtn text-light">
+        <a href="" class="modal-signin" data-dismiss="modal" data-toggle="modal" data-target="#signin">or, Sign in</a>
+       </div>
+       <div class="form-group mt-5 text-center">
+        <a href="#" class="fb d-inline-block">
+         <img src="assets/img/icons/fb-logo.png" alt="Facebook-Logo" class="d-inline-block mr-2">
+         Sign up with Facebook</a>
+        <a href="#" class="google mt-3 d-inline-block">
+         <img src="assets/img/icons/google-logo.png" alt="Facebook-Logo" class="d-inline-block mr-2">
+         Sign up with Google</a>
+       </div>
+       <div class="form-group mt-5 text-center">
+        <p class="modal-mobile-footer mx-auto">
+         By signing up, you agree to our Terms & conditions, Privacy policy
+        </p>
+       </div>
+      </form>
+     </div>
+    </div>
+    <div class="modal-hero p-4 modal-content border-0 rounded-0">
+     <h5 class=" text-right">Already have an account?
+      <a href="" data-dismiss="modal" data-toggle="modal" data-target="#signin">Sign In</a></h5>
+     <img src="assets/img/auth-hero.png" alt="Authentication-Hero-Background">
+     <p class="modal-desktop-footer mx-auto text-center">
+      By signing up, you agree to our Terms & conditions, Privacy policy
+     </p>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <!-- LOGIN MODAL -->
+ <div class="modal fade signup" id="signin" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+  aria-hidden="true">
+  <div class="modal-dialog text-right" role="document">
+   <button data-dismiss="modal" aria-label="Close" class="desktop-close">
+    <span class="desktop-close-item d-flex justify-content-center align-items-center text-dark">x</span>
+   </button>
+   <div class="alert text-center modal-message p-0">
+    <p class="alert-success p-4">
+     Let's learn, share & inspire each other with our passion for computer
+     engineering, Sign up now
+    </p>
+   </div>
+   <div class="d-flex align-items-center justify-content-center">
+    <div class="modal-content py-3">
+     <div class="modal-header px-4 d-flex justify-content-between align-items-center">
+      <h3 class="modal-title font-weight-bold sign-in" id="modal-title">Sign In</h3>
+      <h3 class="welcome-back modal-title font-weight-bold">Welcome back!</h3>
+      <button data-dismiss="modal" aria-label="Close">
+       <span class="modal__close d-flex justify-content-center align-items-center text-light">x</span>
+      </button>
+     </div>
+     <div class="modal-body">
+      <form action="" method="POST" id="form-signin">
+       <div class="form-group m-0">
+        <input type="text" name="signin-email" id="signin-email" class="signin-email form-control form-control-lg"
+         placeholder="Email">
+       </div>
+       <div class="form-group m-0 modal-password d-flex align-items-center">
+        <input type="password" name="signin-password" id="signin-password"
+         class="signup-password form-control form-control-lg" autocomplete="on" placeholder="Password">
+        <i class="d-flex align-items-center justify-content-center fas fa-eye"></i>
+       </div>
+       <div class="form-group mt-5 d-flex justify-content-between align-items-center">
+        <input type="submit" name="signup" value="Create Account" class="btn-primary btn-lg btn signupbtn text-light">
+        <a href="" class="modal-signin" data-dismiss="modal" data-toggle="modal" data-target="#signup">or, Create
+         Account</a>
+       </div>
+       <div class="form-group mt-5 text-center">
+        <a href="#" class="fb d-inline-block">
+         <img src="assets/img/icons/fb-logo.png" alt="Facebook-Logo" class="d-inline-block mr-2">
+         Sign up with Facebook</a>
+        <a href="#" class="google mt-3 d-inline-block">
+         <img src="assets/img/icons/google-logo.png" alt="Facebook-Logo" class="d-inline-block mr-2">
+         Sign up with Google</a>
+       </div>
+       <div class="form-group mt-5 text-center">
+        <p class="modal-footer mx-auto"> Forgot Password? </p>
+       </div>
+      </form>
+     </div>
+    </div>
+    <div class="modal-hero p-4 modal-content border-0 rounded-0">
+     <h5 class=" text-right">Don't have an account yet?
+      <a href="" data-dismiss="modal" data-toggle="modal" data-target="#signup">Create new for free!</a></h5>
+     <img src="assets/img/auth-hero.png" alt="Authentication-Hero-Background">
+     <p class="modal-desktop-footer mx-auto text-center">
+      By signing up, you agree to our Terms & conditions, Privacy policy
+     </p>
+    </div>
+   </div>
+  </div>
+ </div>
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+ <script>
+  document.querySelector('[data-target="#signin"]').click();
+ </script>
 </body>
-<section class="mobile text-right p-3 d-md-none d-lg-none">
- <div class="mobile__icons d-inline-block">
-  <img src="assets/img/icons/rectangle.png" alt="rectangle" />
-  <img src="assets/img/icons/oval.png" alt="rectangle" />
-  <img src="assets/img/icons/triangle.png" alt="rectangle" />
- </div>
-</section>
 
 </html>

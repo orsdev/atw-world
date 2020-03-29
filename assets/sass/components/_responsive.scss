@@ -1,0 +1,129 @@
+@media (max-width: 360px) {
+  .hero {
+    height: 250px;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.5),
+        rgba(94, 82, 82, 0.5)
+      ),
+      url("../img/hero-mobile.png");
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .modal {
+    top: 178px;
+    left: 0;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+
+    &-dialog {
+      min-width: 100%;
+    }
+  }
+}
+
+@media (min-width: 361px) {
+  .mobile {
+    display: none;
+  }
+
+  .hero {
+    background-size: cover;
+    height: 440px;
+
+    h1 {
+      font-size: 3.6rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (min-width: 361px) and (max-width: 420px) {
+  .hero {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 779px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .modal {
+    overflow-y: auto !important;
+    width: 95% !important;
+
+    &-content {
+      width: 100%;
+    }
+
+    &-hero {
+      display: none;
+    }
+
+    &-message {
+      display: none;
+    }
+
+    input[type="submit"] {
+      width: 120px;
+    }
+
+    &-signin {
+      display: inline-block;
+    }
+
+    &-footer {
+      display: inline-block;
+    }
+
+    &-header {
+      button {
+        display: block;
+      }
+    }
+
+    &-mobile-footer {
+      display: block;
+    }
+
+    &-content {
+      height: 100%;
+    }
+  }
+
+  .welcome-back {
+    display: block;
+  }
+
+  .sign-in {
+    display: none;
+  }
+
+  .desktop-close {
+    display: none;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 800px) {
+  .modal-dialog {
+    max-width: 90% !important;
+  }
+}
