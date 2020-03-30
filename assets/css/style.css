@@ -281,6 +281,9 @@
 .card:not(:last-child) {
   margin-bottom: 10px;
 }
+.card:last-child {
+  margin-bottom: 50px;
+}
 .card-tag {
   padding: 1.25rem;
 }
