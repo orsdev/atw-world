@@ -1,5 +1,9 @@
 @media (max-width: 360px) {
-  .hero {
+  .hero,
+  .hero__bg {
+    display: block !important;
+    position: relative;
+    overflow: hidden;
     height: 250px;
     background-image: linear-gradient(
         to left,

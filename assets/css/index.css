@@ -486,14 +486,20 @@
 }
 
 @media (max-width: 360px) {
-  .hero {
+  .hero,
+.hero__bg {
+    display: block !important;
+    position: relative;
+    overflow: hidden;
     height: 250px;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(94, 82, 82, 0.5)), url("../img/hero-mobile.png");
   }
-  .hero h1 {
+  .hero h1,
+.hero__bg h1 {
     font-size: 2rem;
   }
-  .hero p {
+  .hero p,
+.hero__bg p {
     font-size: 1.5rem;
   }
 
