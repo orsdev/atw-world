@@ -324,30 +324,65 @@
   width: 100%;
 }
 
-@media (max-width: 360px) {
-  .card-footer {
-    display: inline-block !important;
-  }
-  .card__author {
-    text-align: center;
-  }
-  .card__author-count {
-    display: inline-block !important;
-  }
-  .card__container {
-    flex-direction: column;
-    width: 100% !important;
-  }
-  .card__view {
-    display: inline-block !important;
-    width: 100% !important;
-    margin-top: 10px;
-  }
-  .card__view a {
-    width: 70px;
-    margin: auto;
-  }
+.desktop {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 0 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+.desktop img {
+  width: 132px;
+}
+.desktop form {
+  background: #f2f2f2;
+  border-radius: 21px;
+  width: 285px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.desktop form input {
+  width: calc(100% - 60px);
+  height: 42px;
+  border: none;
+  background: transparent;
+  font-size: 1.166rem;
+  font-weight: 500;
+  text-align: left;
+}
+.desktop form input:focus {
+  border: none;
+  outline: none;
+}
+.desktop form i {
+  display: inline-block;
+  width: 60px;
+  font-size: 1.5rem;
+}
+.desktop__account {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.desktop__account a {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+.desktop__account a > span {
+  color: #2f6ce5;
+  margin-left: 4px;
+}
+.desktop__account a i {
+  font-size: 1.2rem;
+  margin-left: 3px;
+  margin-top: -4px;
+}
+
 @media (max-width: 360px) {
   .hero {
     height: 250px;
@@ -372,6 +407,29 @@
   .modal-dialog {
     min-width: 100%;
   }
+
+  .card-footer {
+    display: inline-block !important;
+  }
+  .card__author {
+    text-align: center;
+  }
+  .card__author-count {
+    display: inline-block !important;
+  }
+  .card__container {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .card__view {
+    display: inline-block !important;
+    width: 100% !important;
+    margin-top: 10px;
+  }
+  .card__view a {
+    width: 70px;
+    margin: auto;
+  }
 }
 @media (min-width: 361px) {
   .mobile {
@@ -392,6 +450,19 @@
 @media (min-width: 361px) and (max-width: 420px) {
   .hero h1 {
     font-size: 3rem;
+  }
+}
+@media (min-width: 361px) and (max-width: 700px) {
+  .desktop {
+    display: flex;
+    flex-direction: column;
+  }
+  .desktop div {
+    margin-bottom: 8px;
+  }
+
+  .hero__top {
+    display: none;
   }
 }
 @media (max-width: 470px) {
@@ -449,6 +520,15 @@
   }
 
   .desktop-close {
+    display: none;
+  }
+}
+@media (min-width: 701px) {
+  .desktop {
+    display: flex;
+  }
+
+  .hero__top {
     display: none;
   }
 }
