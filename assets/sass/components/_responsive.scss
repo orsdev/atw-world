@@ -18,16 +18,8 @@
   }
 
   .modal {
-    top: 178px;
-    left: 0;
-    transform: translate(0);
-    -webkit-transform: translate(0);
-    -moz-transform: translate(0);
-    -ms-transform: translate(0);
-    -o-transform: translate(0);
-
-    &-dialog {
-      min-width: 100%;
+    &-content {
+      border-radius: 8px 8px 0px 0px;
     }
   }
 
@@ -124,11 +116,13 @@
 
 @media (max-width: 650px) {
   .modal {
-    overflow-y: auto !important;
-    width: 95% !important;
-
     &-content {
       width: 100%;
+      border-radius: 5px !important;
+      -webkit-border-radius: 5px !important;
+      -moz-border-radius: 5px !important;
+      -ms-border-radius: 5px !important;
+      -o-border-radius: 5px !important;
     }
 
     &-hero {
@@ -179,6 +173,12 @@
   }
 }
 
+@media (min-width: 651px) and (max-width: 800px) {
+  .modal-dialog {
+    max-width: 90% !important;
+  }
+}
+
 @media (min-width: 701px) {
   .desktop {
     display: flex;
@@ -186,12 +186,6 @@
 
   .hero__top {
     display: none;
-  }
-}
-
-@media (min-width: 651px) and (max-width: 800px) {
-  .modal-dialog {
-    max-width: 90% !important;
   }
 }
 

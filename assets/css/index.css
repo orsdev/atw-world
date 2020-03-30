@@ -60,6 +60,9 @@
 .modal-fullname {
   display: flex;
 }
+.modal-fullname input {
+  width: 50%;
+}
 .modal input:not([type=submit]) {
   background: #f8f9fa;
   height: 40px;
@@ -138,7 +141,6 @@
 }
 
 .desktop-close {
-  outline: 10px solid red;
   display: inline-block;
   padding-bottom: 20px;
 }
@@ -431,17 +433,8 @@
     font-size: 1.5rem;
   }
 
-  .modal {
-    top: 178px;
-    left: 0;
-    transform: translate(0);
-    -webkit-transform: translate(0);
-    -moz-transform: translate(0);
-    -ms-transform: translate(0);
-    -o-transform: translate(0);
-  }
-  .modal-dialog {
-    min-width: 100%;
+  .modal-content {
+    border-radius: 8px 8px 0px 0px;
   }
 
   .card-footer {
@@ -515,12 +508,13 @@
   }
 }
 @media (max-width: 650px) {
-  .modal {
-    overflow-y: auto !important;
-    width: 95% !important;
-  }
   .modal-content {
     width: 100%;
+    border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
   }
   .modal-hero {
     display: none;
@@ -559,6 +553,11 @@
     display: none;
   }
 }
+@media (min-width: 651px) and (max-width: 800px) {
+  .modal-dialog {
+    max-width: 90% !important;
+  }
+}
 @media (min-width: 701px) {
   .desktop {
     display: flex;
@@ -566,11 +565,6 @@
 
   .hero__top {
     display: none;
-  }
-}
-@media (min-width: 651px) and (max-width: 800px) {
-  .modal-dialog {
-    max-width: 90% !important;
   }
 }
 @media (max-width: 767px) {
