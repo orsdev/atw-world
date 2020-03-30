@@ -10,7 +10,7 @@
     }
 
     li {
-      width: 90px;
+      width: 86px;
       font-size: 1.5rem;
       opacity: 0.8;
     }
@@ -22,7 +22,7 @@
     }
 
     button {
-      width: 110px;
+      width: 119px;
       height: 28px;
       font-size: 1.3rem;
       font-weight: 600;
@@ -159,4 +159,77 @@
 .post__mobile-header {
   display: none !important;
   width: 100%;
+}
+
+.login-aside {
+  form {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid darken($light-grey, 8%);
+
+    input {
+      width: calc(100% - 30px);
+      height: 42px;
+      border: none;
+      background: transparent;
+      font-size: 1.166rem;
+      font-weight: 500;
+      text-align: left;
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+
+    i {
+      display: inline-block;
+      width: 30px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.recommended-groups {
+  &-header {
+    i {
+      font-size: 1.2rem;
+      margin-right: 5px;
+      display: inline-block;
+      margin-top: -5px;
+    }
+  }
+  li {
+    border: none;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 1.4rem;
+      margin-left: 6px;
+    }
+
+    img {
+      width: 36px;
+      height: 36px;
+      display: inline-block;
+    }
+
+    .btn {
+      margin-left: 20px;
+      background: $light-grey;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+
+  a.nav-link {
+    font-size: 1.2rem;
+  }
 }
