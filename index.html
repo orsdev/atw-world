@@ -6,8 +6,10 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+ <!-- CDN LINKS -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,500,600,700&display=swap"
   rel="stylesheet">
 
@@ -37,6 +39,7 @@
    <p class="text-light">142,765 Computer Engineers follow this</p>
   </div>
  </section>
+
  <!-- SIGNUP MODAL -->
  <div class="modal fade signup" id="signup" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
   aria-hidden="true">
@@ -80,7 +83,7 @@
        </div>
        <div class="form-group mt-5 d-flex justify-content-between align-items-center">
         <input type="submit" name="signup" value="Create Account" class="btn-primary btn-lg btn signupbtn text-light">
-        <a href="" class="modal-signin" data-dismiss="modal" data-toggle="modal" data-target="#signin">or, Sign in</a>
+        <a href="#" class="modal-signin" data-dismiss="modal" data-toggle="modal" data-target="#signin">or, Sign in</a>
        </div>
        <div class="form-group mt-5 text-center">
         <a href="#" class="fb d-inline-block">
@@ -100,7 +103,7 @@
     </div>
     <div class="modal-hero p-4 modal-content border-0 rounded-0">
      <h5 class=" text-right">Already have an account?
-      <a href="" data-dismiss="modal" data-toggle="modal" data-target="#signin">Sign In</a></h5>
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signin">Sign In</a></h5>
      <img src="assets/img/auth-hero.png" alt="Authentication-Hero-Background">
      <p class="modal-desktop-footer mx-auto text-center">
       By signing up, you agree to our Terms & conditions, Privacy policy
@@ -145,7 +148,7 @@
        </div>
        <div class="form-group mt-5 d-flex justify-content-between align-items-center">
         <input type="submit" name="signup" value="Create Account" class="btn-primary btn-lg btn signupbtn text-light">
-        <a href="" class="modal-signin" data-dismiss="modal" data-toggle="modal" data-target="#signup">or, Create
+        <a href="#" class="modal-signin" data-dismiss="modal" data-toggle="modal" data-target="#signup">or, Create
          Account</a>
        </div>
        <div class="form-group mt-5 text-center">
@@ -164,7 +167,7 @@
     </div>
     <div class="modal-hero p-4 modal-content border-0 rounded-0">
      <h5 class=" text-right">Don't have an account yet?
-      <a href="" data-dismiss="modal" data-toggle="modal" data-target="#signup">Create new for free!</a></h5>
+      <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signup">Create new for free!</a></h5>
      <img src="assets/img/auth-hero.png" alt="Authentication-Hero-Background">
      <p class="modal-desktop-footer mx-auto text-center">
       By signing up, you agree to our Terms & conditions, Privacy policy
@@ -174,10 +177,240 @@
   </div>
  </div>
 
+ <!-- ARTICLE SECTION -->
+ <main class="post mt-5 container mx-auto">
+  <div class="post__header d-flex justify-content-between">
+   <ul class=" d-flex text-center">
+    <li class=" active">All Posts(32)</li>
+    <li>Article</li>
+    <li>Event</li>
+    <li>Education</li>
+    <li>Job</li>
+   </ul>
+   <div class="post__mobile-header d-flex justify-content-between align-items-center">
+    <h5 class="font-weight-bold">Posts(368)</h5>
+    <button class="btn btn-md btn-default mr-3">
+     filter: All
+     <i class="ml-4 fas fa-sort-down"></i>
+    </button>
+   </div>
+   <div class="buttons">
+    <button class="btn btn-md btn-default mr-3">
+     Write Post
+     <i class="ml-3 fas fa-sort-down"></i>
+    </button>
+    <button class="btn btn-md btn-primary">
+     <i class="fas fa-users"></i>
+     Join Group
+    </button>
+   </div>
+  </div>
+  <hr class="divider">
+  <div class="row mt-5">
+   <div class="col-lg-8 col-md-7">
+    <article class="post__article">
+     <div class="card">
+      <img class="card-img-top" src="assets/img/mountain.png" alt="Foggy-Mountain">
+      <div class="card-tag d-flex align-items-center">
+       <img src="assets/img/icons/note.png" alt="Article-Icon">
+       <h5 class="ml-2 d-inline-block"> Article</h5>
+      </div>
+      <div class="card-body">
+       <div class="d-flex justify-content-between">
+        <h4 class="card-title">
+         What if famous brands had regular fonts? Meet RegulaBrand
+        </h4>
+        <i class="fas fa-ellipsis-h text-center mt-1"></i>
+       </div>
+       <p class="card-text">
+        I've worked in UX for the better part of a decade. From now on, I plan to rei..
+       </p>
+      </div>
+      <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+       <div class="card__container d-flex align-items-center">
+        <img src="assets/img/kamra.png" alt="Sarthak-Kamra" class="card__author-pic">
+        <div class="card__author d-flex align-items-center justify-content-between w-100">
+         <h6 class="card__author-name ml-3 w-50">Sarthak Kamra</h6>
+         <div class="card__author-count d-flex align-items-center w-50 justify-content-end">
+          <i class="fas fa-eye mr-2"></i>
+          <p>1.4k views</p>
+         </div>
+        </div>
+       </div>
+       <div class="card__view d-flex align-items-center justify-content-end">
+        <a href="#" class="d-flex align-items-center">
+         <img src="assets/img/icons/share.png" alt="Post-Share-Icon" class="share-icon ml-5">
+         <span class="d-none share-text">Share</span>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="card">
+      <img class="card-img-top" src="assets/img/shed.png" alt="Old-Shed">
+      <div class="card-tag d-flex align-items-center">
+       <img src="assets/img/icons/microscope.png" alt="Article-Icon">
+       <h5 class="ml-2 d-inline-block"> Education </h5>
+      </div>
+      <div class="card-body">
+       <div class="d-flex justify-content-between">
+        <h4 class="card-title">
+         Ta Benefits for Investment under National Pension Scheme launched by Government
+        </h4>
+        <i class="fas fa-ellipsis-h text-center mt-1"></i>
+       </div>
+       <p class="card-text">
+        I've worked in UX for the better part of a decade. From now on, I plan to rei..
+       </p>
+      </div>
+      <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+       <div class="card__container d-flex align-items-center">
+        <img src="assets/img/sarah.png" alt="Sarah-West" class="card__author-pic">
+        <div class="card__author d-flex align-items-center justify-content-between w-100">
+         <h6 class="card__author-name ml-3 w-50">Sarah West</h6>
+         <div class="card__author-count d-flex align-items-center w-50 justify-content-end">
+          <i class="fas fa-eye mr-2"></i>
+          <p>1.4k views</p>
+         </div>
+        </div>
+       </div>
+       <div class="card__view d-flex align-items-center justify-content-end">
+        <a href="#" class="d-flex align-items-center">
+         <img src="assets/img/icons/share.png" alt="Post-Share-Icon" class="share-icon ml-5">
+         <span class="d-none share-text">Share</span>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="card">
+      <img class="card-img-top" src="assets/img/red-car.png" alt="Red-Car">
+      <div class="card-tag d-flex align-items-center">
+       <img src="assets/img/icons/calender.png" alt="Article-Icon">
+       <h5 class="ml-2 d-inline-block"> Meetup </h5>
+      </div>
+      <div class="card-body">
+       <div class="d-flex justify-content-between">
+        <h4 class="card-title">
+         Finance & Investment Elite Social Mixer @Lujiazui
+        </h4>
+        <i class="fas fa-ellipsis-h text-center mt-1"></i>
+       </div>
+       <p class="card-text">
+        I've worked in UX for the better part of a decade. From now on, I plan to rei..
+       </p>
+       <div class="card-info d-flex justify-content-between align-items-center">
+        <div>
+         <span>
+          <img src="assets/img/icons/reminder.png" alt="Reminder-Icon">
+         </span>
+         <span class="card-info-date">Fri, 12 Oct, 2018</span>
+        </div>
+        <span class="ml-1 card-info-location">
+         <i class="fa fa-map-marker"></i>
+         Ahmedabad, India
+        </span>
+       </div>
+       <a href="#" class="text-decoration-none">
+        <button class="link-btn btn btn-block btn-light text-danger">
+         Visit Website</button>
+       </a>
+      </div>
+      <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+       <div class="card__container d-flex align-items-center">
+        <img src="assets/img/jones.png" alt="Ronal-Jones" class="card__author-pic">
+        <div class="card__author d-flex align-items-center justify-content-between w-100">
+         <h6 class="card__author-name ml-3 w-50">Ronal Jones</h6>
+         <div class="card__author-count d-flex align-items-center w-50 justify-content-end">
+          <i class="fas fa-eye mr-2"></i>
+          <p>1.4k views</p>
+         </div>
+        </div>
+       </div>
+       <div class="card__view d-flex align-items-center justify-content-end">
+        <a href="#" class="d-flex align-items-center">
+         <img src="assets/img/icons/share.png" alt="Post-Share-Icon" class="share-icon ml-5">
+         <span class="d-none share-text">Share</span>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="card">
+      <div class="card-tag d-flex align-items-center">
+       <img src="assets/img/icons/job.png" alt="Article-Icon">
+       <h5 class="ml-2 d-inline-block"> Job </h5>
+      </div>
+      <div class="card-body">
+       <div class="d-flex justify-content-between">
+        <h4 class="card-title">
+         Sofware Developer
+        </h4>
+        <i class="fas fa-ellipsis-h text-center mt-1"></i>
+       </div>
+       <p class="card-text">
+        I've worked in UX for the better part of a decade. From now on, I plan to rei..
+       </p>
+       <div class="card-info d-flex justify-content-between align-items-center">
+        <div>
+         <span>
+          <img src="assets/img/icons/brief-case.png" alt="BriefCase-Icon">
+         </span>
+         <span class="card-info-date font-weight-bold">Innovaccer Analytics Private Ltd</span>
+        </div>
+        <span class="ml-1 card-info-location">
+         <i class="fa fa-map-marker"></i>
+         Noida, India
+        </span>
+       </div>
+       <a href="#" class="text-decoration-none">
+        <button class="link-btn btn btn-block btn-light text-success">
+         Apply on Timesjobs</button>
+       </a>
+      </div>
+      <div class="card-footer bg-transparent border-0 d-flex justify-content-between align-items-center">
+       <div class="card__container d-flex align-items-center">
+        <img src="assets/img/joseph.png" alt="Joseph-Gray" class="card__author-pic">
+        <div class="card__author d-flex align-items-center justify-content-between w-100">
+         <h6 class="card__author-name ml-3 w-50">Joseph Gray</h6>
+         <div class="card__author-count d-flex align-items-center w-50 justify-content-end">
+          <i class="fas fa-eye mr-2"></i>
+          <p>1.4k views</p>
+         </div>
+        </div>
+       </div>
+       <div class="card__view d-flex align-items-center justify-content-end">
+        <a href="#" class="d-flex align-items-center">
+         <img src="assets/img/icons/share.png" alt="Post-Share-Icon" class="share-icon ml-5">
+         <span class="d-none share-text">Share</span>
+        </a>
+       </div>
+      </div>
+     </div>
+    </article>
+   </div>
+   <div class="aside col-lg-4 col-md-5 d-flex justify-content-end text-center">
+    <aside>
+     <div class="d-flex align-items-center location">
+      <div class="location__map d-flex align-items-center">
+       <i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+       <p class="location__name m-0">Noida, India</p>
+      </div>
+      <div class="edit text-right">
+       <i class="fa fa-pencil" aria-hidden="true"></i>
+      </div>
+     </div>
+     <hr>
+     <div class="location__alert mt-4">
+      <p>
+       <i class="mr-2 fas fa-exclamation-circle"></i>
+       Your location will help us serve better and extend a personalised experience
+      </p>
+     </div>
+    </aside>
+   </div>
+  </div>
+ </main>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

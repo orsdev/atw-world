@@ -1,0 +1,158 @@
+.post {
+  ul {
+    list-style: none;
+
+    .active {
+      font-weight: 500;
+      opacity: 1;
+      border-bottom: 1px solid $dark-grey;
+      padding-bottom: 12px;
+    }
+
+    li {
+      width: 90px;
+      font-size: 1.5rem;
+      opacity: 0.8;
+    }
+  }
+
+  &__header {
+    h5 {
+      font-size: 1.4rem;
+    }
+
+    button {
+      width: 110px;
+      height: 28px;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .btn-default {
+      background: $light-grey2;
+    }
+
+    .btn-primary {
+      background: $blue;
+    }
+
+    .fa-sort-down {
+      display: inline-block;
+      font-size: 1.8rem;
+      margin-top: -5px;
+    }
+  }
+
+  .divider {
+    width: 100%;
+    height: 100%;
+    margin-top: -12px;
+  }
+
+  &__article {
+    height: 193.28px;
+  }
+}
+
+.card {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &-tag {
+    padding: 1.25rem;
+    h5 {
+      margin-top: 6px !important;
+      display: block !important;
+    }
+  }
+
+  &-info {
+    padding: 5px 0;
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 2rem;
+    flex-basis: 80%;
+  }
+
+  &-text {
+    font-size: 1.8rem;
+    color: $grey-purple;
+  }
+
+  .fa-ellipsis-h {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  &__container {
+    width: calc(100% - 40px);
+
+    h6 {
+      font-weight: 600;
+      font-size: 1.7rem;
+    }
+
+    i {
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1.4rem;
+      display: inline-block;
+    }
+  }
+
+  &__view {
+    width: 40px;
+
+    .share-icon {
+      background: $light-grey2;
+      padding: 5px 8px;
+    }
+  }
+}
+
+.location {
+  &__map {
+    width: 100px;
+    i {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  &__alert {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    width: 220px;
+  }
+}
+
+.edit {
+  width: calc(100% - 100px);
+
+  .fa-pencil {
+    display: inline-block;
+    font-size: 1.8rem;
+  }
+}
+
+.post__mobile-header {
+  display: none !important;
+  width: 100%;
+}

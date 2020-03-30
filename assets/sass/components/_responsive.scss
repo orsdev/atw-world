@@ -1,4 +1,36 @@
 @media (max-width: 360px) {
+  .card {
+    &-footer {
+      display: inline-block !important;
+    }
+
+    &__author {
+      text-align: center;
+
+      &-count {
+        display: inline-block !important;
+      }
+    }
+
+    &__container {
+      flex-direction: column;
+      width: 100% !important;
+    }
+
+    &__view {
+      display: inline-block !important;
+      width: 100% !important;
+      margin-top: 10px;
+
+      a {
+        width: 70px;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
   .hero {
     height: 250px;
     background-image: linear-gradient(
@@ -55,6 +87,18 @@
   .hero {
     h1 {
       font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .card {
+    &-title {
+      font-size: 1.8rem;
+    }
+
+    &-text {
+      font-size: 1.6rem;
     }
   }
 }
@@ -125,5 +169,69 @@
 @media (min-width: 651px) and (max-width: 800px) {
   .modal-dialog {
     max-width: 90% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .post {
+    ul {
+      display: none !important;
+    }
+
+    hr {
+      display: none;
+    }
+
+    &__mobile-header {
+      display: flex !important;
+    }
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .aside {
+    display: none !important;
+  }
+
+  .card {
+    &__author {
+      flex-direction: column;
+      justify-content: start !important;
+
+      &-name {
+        width: 98% !important;
+        font-size: 1.6rem !important;
+      }
+
+      &-count {
+        justify-content: start !important;
+        width: 98% !important;
+        line-height: 5px;
+        padding-left: 5px;
+      }
+    }
+
+    &__container {
+      width: calc(100% - 70px);
+    }
+
+    &__view {
+      width: 70px;
+      display: inline-block !important;
+
+      img {
+        margin: 0 !important;
+      }
+
+      span {
+        display: inline-block !important;
+        font-size: 1.2rem;
+        color: $grey-purple;
+        font-weight: 600;
+        margin-left: 6px;
+      }
+    }
   }
 }

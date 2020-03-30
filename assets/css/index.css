@@ -164,6 +164,15 @@
   display: block;
 }
 
+.link-btn {
+  border: 0.7px dashed #a9aeb8;
+  height: 38px;
+  border: 0.7px dashed #a9aeb8;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -188,6 +197,157 @@
   z-index: 4;
 }
 
+.post ul {
+  list-style: none;
+}
+.post ul .active {
+  font-weight: 500;
+  opacity: 1;
+  border-bottom: 1px solid #212529;
+  padding-bottom: 12px;
+}
+.post ul li {
+  width: 90px;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+.post__header h5 {
+  font-size: 1.4rem;
+}
+.post__header button {
+  width: 110px;
+  height: 28px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.post__header .btn-default {
+  background: #d9d9db;
+}
+.post__header .btn-primary {
+  background: #2f6ce5;
+}
+.post__header .fa-sort-down {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-top: -5px;
+}
+.post .divider {
+  width: 100%;
+  height: 100%;
+  margin-top: -12px;
+}
+.post__article {
+  height: 193.28px;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 10px;
+}
+.card-tag {
+  padding: 1.25rem;
+}
+.card-tag h5 {
+  margin-top: 6px !important;
+  display: block !important;
+}
+.card-info {
+  padding: 5px 0;
+  font-size: 1.3rem;
+}
+.card h5 {
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 2rem;
+  flex-basis: 80%;
+}
+.card-text {
+  font-size: 1.8rem;
+  color: #495057;
+}
+.card .fa-ellipsis-h {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.card__container {
+  width: calc(100% - 40px);
+}
+.card__container h6 {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.card__container i {
+  font-size: 1.1rem;
+}
+.card__container p {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+.card__view {
+  width: 40px;
+}
+.card__view .share-icon {
+  background: #d9d9db;
+  padding: 5px 8px;
+}
+
+.location__map {
+  width: 100px;
+}
+.location__map i {
+  font-size: 1.4rem;
+}
+.location__name {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.location__alert {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  width: 220px;
+}
+
+.edit {
+  width: calc(100% - 100px);
+}
+.edit .fa-pencil {
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.post__mobile-header {
+  display: none !important;
+  width: 100%;
+}
+
+@media (max-width: 360px) {
+  .card-footer {
+    display: inline-block !important;
+  }
+  .card__author {
+    text-align: center;
+  }
+  .card__author-count {
+    display: inline-block !important;
+  }
+  .card__container {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .card__view {
+    display: inline-block !important;
+    width: 100% !important;
+    margin-top: 10px;
+  }
+  .card__view a {
+    width: 70px;
+    margin: auto;
+  }
+}
 @media (max-width: 360px) {
   .hero {
     height: 250px;
@@ -232,6 +392,14 @@
 @media (min-width: 361px) and (max-width: 420px) {
   .hero h1 {
     font-size: 3rem;
+  }
+}
+@media (max-width: 470px) {
+  .card-title {
+    font-size: 1.8rem;
+  }
+  .card-text {
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 576px) {
@@ -287,6 +455,57 @@
 @media (min-width: 651px) and (max-width: 800px) {
   .modal-dialog {
     max-width: 90% !important;
+  }
+}
+@media (max-width: 767px) {
+  .post ul {
+    display: none !important;
+  }
+  .post hr {
+    display: none;
+  }
+  .post__mobile-header {
+    display: flex !important;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .aside {
+    display: none !important;
+  }
+
+  .card__author {
+    flex-direction: column;
+    justify-content: start !important;
+  }
+  .card__author-name {
+    width: 98% !important;
+    font-size: 1.6rem !important;
+  }
+  .card__author-count {
+    justify-content: start !important;
+    width: 98% !important;
+    line-height: 5px;
+    padding-left: 5px;
+  }
+  .card__container {
+    width: calc(100% - 70px);
+  }
+  .card__view {
+    width: 70px;
+    display: inline-block !important;
+  }
+  .card__view img {
+    margin: 0 !important;
+  }
+  .card__view span {
+    display: inline-block !important;
+    font-size: 1.2rem;
+    color: #495057;
+    font-weight: 600;
+    margin-left: 6px;
   }
 }
 *,
