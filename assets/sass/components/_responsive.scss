@@ -67,18 +67,6 @@
     background-size: cover;
     height: 440px;
 
-    &__top {
-      .fas {
-        font-size: 2.9rem;
-      }
-
-      [data-target="#signup"] {
-        width: 100px;
-        height: 40px;
-        font-size: 1.4rem;
-      }
-    }
-
     h1 {
       font-size: 3.6rem;
     }
@@ -104,18 +92,6 @@
 
     & div {
       margin-bottom: 8px;
-    }
-  }
-
-  .hero__top {
-    .fas {
-      font-size: 2.9rem;
-    }
-
-    [data-target="#signup"] {
-      width: 100px;
-      height: 40px;
-      font-size: 1.4rem;
     }
   }
 }
@@ -270,5 +246,25 @@
         margin-left: 6px;
       }
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero__top {
+    .fas {
+      font-size: 2.9rem;
+    }
+
+    [data-target="#signup"] {
+      width: 100px;
+      height: 40px;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero__top {
+    display: none;
   }
 }

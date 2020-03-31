@@ -542,14 +542,6 @@
     background-size: cover;
     height: 440px;
   }
-  .hero__top .fas {
-    font-size: 2.9rem;
-  }
-  .hero__top [data-target="#signup"] {
-    width: 100px;
-    height: 40px;
-    font-size: 1.4rem;
-  }
   .hero h1 {
     font-size: 3.6rem;
   }
@@ -569,15 +561,6 @@
   }
   .desktop div {
     margin-bottom: 8px;
-  }
-
-  .hero__top .fas {
-    font-size: 2.9rem;
-  }
-  .hero__top [data-target="#signup"] {
-    width: 100px;
-    height: 40px;
-    font-size: 1.4rem;
   }
 }
 @media (max-width: 470px) {
@@ -698,6 +681,21 @@
     color: #495057;
     font-weight: 600;
     margin-left: 6px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero__top .fas {
+    font-size: 2.9rem;
+  }
+  .hero__top [data-target="#signup"] {
+    width: 100px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1025px) {
+  .hero__top {
+    display: none;
   }
 }
 *,
