@@ -542,6 +542,14 @@
     background-size: cover;
     height: 440px;
   }
+  .hero__top .fas {
+    font-size: 2.9rem;
+  }
+  .hero__top [data-target="#signup"] {
+    width: 100px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
   .hero h1 {
     font-size: 3.6rem;
   }
@@ -563,8 +571,13 @@
     margin-bottom: 8px;
   }
 
-  .hero__top {
-    display: none;
+  .hero__top .fas {
+    font-size: 2.9rem;
+  }
+  .hero__top [data-target="#signup"] {
+    width: 100px;
+    height: 40px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 470px) {
@@ -634,10 +647,6 @@
 @media (min-width: 701px) {
   .desktop {
     display: flex;
-  }
-
-  .hero__top {
-    display: none;
   }
 }
 @media (max-width: 767px) {

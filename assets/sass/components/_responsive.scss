@@ -67,6 +67,18 @@
     background-size: cover;
     height: 440px;
 
+    &__top {
+      .fas {
+        font-size: 2.9rem;
+      }
+
+      [data-target="#signup"] {
+        width: 100px;
+        height: 40px;
+        font-size: 1.4rem;
+      }
+    }
+
     h1 {
       font-size: 3.6rem;
     }
@@ -96,7 +108,15 @@
   }
 
   .hero__top {
-    display: none;
+    .fas {
+      font-size: 2.9rem;
+    }
+
+    [data-target="#signup"] {
+      width: 100px;
+      height: 40px;
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -186,10 +206,6 @@
 @media (min-width: 701px) {
   .desktop {
     display: flex;
-  }
-
-  .hero__top {
-    display: none;
   }
 }
 
